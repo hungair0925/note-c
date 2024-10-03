@@ -1,0 +1,33 @@
+{
+    "tasks": [
+        {
+            // VSCodeの拡張機能に依存したタスクaの定義
+            "type": "cppbuild",
+            "label": "C/C++: clang アクティブなファイルのビルド",
+            "command": "/usr/bin/clang",
+            "args": [
+                "-fcolor-diagnostics",
+                "-fansi-escape-codes",
+                // デバッグ情報を含めたコンパイル(VSCodeでデバッグするのに必要)
+                "-g",
+                // 現在開いているファイル
+                "${file}",
+                "-o",
+                // ${fileDirname}はファイルが存在するディレクトリ、
+                // ${fileBasenameNoExtension}はファイル名から拡張子を除いた部分
+                "${fileDirname}/output/${fileBasenameNoExtension}"
+            ],
+            "options": {
+                "cwd": "${fileDirname}"
+            },
+            "problemMatcher": [
+                "$gcc"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+        }
+    ],
+    "version": "2.0.0"
+}
