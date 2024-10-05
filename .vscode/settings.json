@@ -8,5 +8,7 @@
         "editor.tabSize": 2,
         "editor.insertSpaces": true,
         "editor.formatOnSave": true
-    }
+    },
+    "C_Cpp.codeAnalysis.clangTidy.enabled": true,
+    "C_Cpp.codeAnalysis.runAutomatically": true
 }
