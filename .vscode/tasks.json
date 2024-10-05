@@ -3,7 +3,7 @@
         {
             // VSCodeの拡張機能に依存したタスクaの定義
             "type": "cppbuild",
-            "label": "C/C++: clang アクティブなファイルのビルド",
+            "label": "C/C++: clang build active file",
             "command": "/usr/bin/clang",
             "args": [
                 "-fcolor-diagnostics",
