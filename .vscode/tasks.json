@@ -3,7 +3,7 @@
         {
             // VSCodeの拡張機能に依存したタスクaの定義
             "type": "cppbuild",
-            "label": "C/C++: clang build active file",
+            "label": "C/C++: clang build and execute active file",
             "command": "/usr/bin/clang",
             "args": [
                 "-fcolor-diagnostics",
@@ -15,6 +15,9 @@
                 "-o",
                 // ${fileDirname}はファイルが存在するディレクトリ、
                 // ${fileBasenameNoExtension}はファイル名から拡張子を除いた部分
+                "${fileDirname}/output/${fileBasenameNoExtension}",
+                // 実行
+                "&&", 
                 "${fileDirname}/output/${fileBasenameNoExtension}"
             ],
             "options": {
