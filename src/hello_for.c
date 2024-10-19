@@ -5,7 +5,7 @@ int main() {
   int iteration = 0;
   double pi = 0;
 
-  printf("ライプニッツ級数の工数を入力してください: ");
+  printf("ライプニッツ級数の項数を入力してください: ");
   scanf("%d", &iteration);
 
   for (int i = 0; i < iteration; i++) {
