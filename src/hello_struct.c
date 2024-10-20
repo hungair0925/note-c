@@ -1,0 +1,20 @@
+#include <stdio.h>
+#define ITEM_LIST_NUMBER 3
+
+typedef struct {
+  int price;
+  char name[10];
+} Item;
+
+int main() {
+  Item item_list[ITEM_LIST_NUMBER] = {
+      {100, "apple"}, {180000, "Mac"}, {4500, "window"}};
+
+  for (int i = 0; i < ITEM_LIST_NUMBER; i++) {
+    printf("---\n");
+    printf("name: %-10s\nprice: %d\n", item_list[i].name, item_list[i].price);
+    printf("---\n");
+  }
+
+  return 0;
+}
