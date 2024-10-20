@@ -11,9 +11,7 @@ int main() {
       {100, "apple"}, {180000, "Mac"}, {4500, "window"}};
 
   for (int i = 0; i < ITEM_LIST_NUMBER; i++) {
-    printf("---\n");
-    printf("name: %-10s\nprice: %d\n", item_list[i].name, item_list[i].price);
-    printf("---\n");
+    printf("name: %-10s price: %d\n", item_list[i].name, item_list[i].price);
   }
 
   return 0;
